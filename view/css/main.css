@@ -1,0 +1,178 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+p {
+	font-family: OpenSans, "Trebuchet MS";
+}
+
+#mainHeader {
+	height: 128px;	
+
+	/*gradient : */
+	background-color: #1e5799;
+	background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, 
+	color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,
+	rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', 
+	endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+#mainHeader p {
+	position: relative;
+	top: -156px;
+	text-align: center;
+	font-family: AlexBrush;
+	font-size: 3.6em;
+}
+
+#logoHead {
+	margin: 14px 22px;
+}
+
+#mainHeader nav li a, p a {
+	color: #000;
+	text-decoration: none;
+}
+
+#mainHeader nav li a:hover, p a:hover {
+	text-decoration: underline;
+}
+
+#mainHeader nav li {
+	display: inline-block;
+	width: 104px;
+	text-align: center;
+	font-family: OpenSans, "Trebuchet MS";
+	font-size: 18px;
+	margin: 0;
+	padding: 8px 2px;
+}
+
+#mainHeader nav ul {
+	display: inline-block;
+	margin: 0 16px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#networks {
+	display: inline-block;
+	font-family: Foglihten, "Trebuchet MS" !important;
+	font-size: 26px;
+	color: #147;
+	width: 208px;
+	margin-top: 128px;
+	margin-left: 16px;
+	margin-bottom: 128px;
+	vertical-align: top;
+	
+	/*DEBUG*/
+	border: 2px solid black;
+}
+
+#networks p {
+	font-size: 25px;
+	margin: 12px 4px;
+}
+
+#linksNetworks {
+	margin: 0px;
+	padding-left: 48px;
+}
+
+#networks li {
+	list-style-type: none;
+}
+
+#networks li a {
+	color: #147;
+	text-decoration: none;
+}
+
+#networks li a:hover {
+	text-decoration: underline;
+}
+
+#wrap {
+	height: auto;
+	min-height: 100%;
+}
+
+#main {
+	margin-bottom: 96px;
+}
+
+#mainSection {
+	/*DEBUG*/
+    border: 2px solid black;
+    
+    display: inline-block;
+    vertical-align: top;
+    margin: 48px;
+}
+
+#mainFooter {
+	position: relative;
+	clear: both;
+	margin-top: -96px;
+	height: 96px;
+	
+	/*gradient : */
+	background-color: #1e5799;
+	background: -moz-linear-gradient(top, rgba(125,185,232,0) 0%, rgba(30,87,153,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,185,232,0)), 
+	color-stop(100%,rgba(30,87,153,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(125,185,232,0) 0%,
+	rgba(30,87,153,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(30,87,153,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(30,87,153,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(30,87,153,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', 
+	endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+}
+
+#mainFooter p {
+	margin: 0 16px;
+	position: relative;
+	bottom: 8px;
+	text-align: right;
+}
+
+#logoFoot {
+	position: relative;
+	top: 24px;
+	left: 24px;
+}
+
+/*fonts loading*/
+@font-face {
+    	font-family: 'OpenSans';
+    	src: url('../asset/font/open-sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    	font-family: 'AlexBrush';
+    	src: url('../asset/font/alex-brush/AlexBrush-Regular.ttf');
+}
+
+@font-face {
+    	font-family: 'Archistico';
+    	src: url('../asset/font/archistico/Archistico_Bold.ttf');
+}
+
+@font-face {
+    	font-family: 'Foglihten';
+    	src: url('../asset/font/foglihten/FoglihtenNo03.otf');
+}
