@@ -7,7 +7,45 @@ html, body {
 	height: 100%;
 }
 
-p {
+p, h1, h2, h3, h4, h5 {
+	font-family: OpenSans, "Trebuchet MS";
+}
+
+h1, h2, h3, h4, h5 {
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+h2 {
+	text-decoration: underline;
+	font-size: 1.8em;
+	margin-bottom: 48px;
+}
+
+h3 {
+	font-size: 1.3em;
+	margin-top: 48px;
+}
+
+
+p a, #diversSection li a {
+	color: #500080;
+	text-decoration: none;
+}
+
+#mainSection ul, #diversSection ul {
+	margin: 8px 16px;
+	margin-bottom: 16px;
+	padding-left: 32px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#mainSection li, #diversSection li {
+	list-style-type: none;
+	padding-left: 48px;
+	margin: 8px;
+	font-size: 1.2em;
 	font-family: OpenSans, "Trebuchet MS";
 }
 
@@ -28,25 +66,31 @@ p {
 	endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
 }
 
-#mainHeader p {
+#mainHeader p {	
 	position: relative;
 	top: -156px;
 	text-align: center;
 	font-family: AlexBrush;
 	font-size: 3.6em;
+	
+	/*-webkit-animation: display 5s 0s forwards; 
+	-moz-animation: display 5s 0s forwards; 
+	-ms-animation: display 5s 0s forwards; 
+	-o-animation: display 5s 0s forwards; 
+	animation: display 5s 0s forwards;*/
 }
 
 #logoHead {
 	margin: 14px 22px;
 }
 
-#mainHeader nav li a, p a {
+#mainHeader nav li a, #mainFooter p a{
 	color: #000;
 	text-decoration: none;
 }
 
 #mainHeader nav li a:hover, p a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 #mainHeader nav li {
@@ -67,19 +111,34 @@ p {
 	right: 0;
 }
 
-#networks {
+#mainAside {
 	display: inline-block;
-	font-family: Foglihten, "Trebuchet MS" !important;
+	vertical-align: top;
+}
+
+#networks, #asideClock {
+	font-family: Foglihten, "Trebuchet MS";
 	font-size: 26px;
 	color: #147;
 	width: 208px;
-	margin-top: 128px;
+	margin-top: 48px;
 	margin-left: 16px;
-	margin-bottom: 128px;
-	vertical-align: top;
-	
-	/*DEBUG*/
-	border: 2px solid black;
+	margin-bottom: 32px;
+}
+
+#mainAside p {
+	font-size: 20px;
+	margin: 8px;
+	padding: 0;
+}
+
+#clock {
+	color: #404040;
+	font-weight: bold;
+}
+
+#mainAside section:last-of-type {
+	margin-bottom: 96px;
 }
 
 #networks p {
@@ -89,7 +148,7 @@ p {
 
 #linksNetworks {
 	margin: 0px;
-	padding-left: 48px;
+	padding-left: 32px;
 }
 
 #networks li {
@@ -97,7 +156,7 @@ p {
 }
 
 #networks li a {
-	color: #147;
+	color: #004;
 	text-decoration: none;
 }
 
@@ -112,15 +171,42 @@ p {
 
 #main {
 	margin-bottom: 96px;
+	display: block;
 }
 
-#mainSection {
-	/*DEBUG*/
-    border: 2px solid black;
-    
-    display: inline-block;
-    vertical-align: top;
+#mainSection, #lesiteSection, #diversSection {
     margin: 48px;
+  	margin-bottonm: 96px;
+  	
+	display: inline-block;
+    vertical-align: top;
+}
+
+#lesiteSection, #diversSection {
+	display: block;
+	margin: 64px;
+}
+
+#lesiteSection p {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+#logoArrowUp, #logoArrowDown {
+	margin: 0;
+	padding: 0;
+}
+
+#logoArrowDown, # {
+	position: fixed;
+	bottom: 96px;
+	right: 16px;
+}
+
+#logoArrowUp, # {
+	position: fixed;
+	top: 128px;
+	right: 16px;
 }
 
 #mainFooter {
@@ -155,6 +241,13 @@ p {
 	top: 24px;
 	left: 24px;
 }
+
+/*animation*/
+/*@-webkit-keyframes display { from { opacity: 0; } to { opacity: 100%; } }
+@-moz-keyframes display { from { opacity: 0; } to { opacity: 100%; } }
+@-ms-keyframes display { from { opacity: 0; } to { opacity: 100%; } }
+@-o-keyframes display { from { opacity: 0; } to { opacity: 100%; } }
+@keyframes display { from { opacity: 0; } to { opacity: 100%; } }*/
 
 /*fonts loading*/
 @font-face {
